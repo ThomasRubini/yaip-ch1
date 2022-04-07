@@ -2,15 +2,7 @@ package ex15;
 
 import java.util.Scanner;
 
-public class Prime {
-
-	public static boolean isPrime(int aPosInt){
-		// Not the best way
-		for(int i=2;i<=Math.sqrt(aPosInt);i++){
-			if(aPosInt%i==0)return false;
-		}
-		return true;
-	}
+public class PrimeList {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -20,7 +12,7 @@ public class Prime {
 		// DEFINITIVELY not the best way
 		int found = 0;
 		for(int i=2;i<upper;i++){
-			if(isPrime(i)){
+			if(PrimeNumbers.isPrime(i)){
 				System.out.println(i);
 				found++;
 			}
